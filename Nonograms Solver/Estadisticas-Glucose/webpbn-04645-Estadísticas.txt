@@ -1,0 +1,45 @@
+c
+c This is glucose 4.0 --  based on MiniSAT (Many thanks to MiniSAT team)
+c
+c ========================================[ Problem Statistics ]===========================================
+c |                                                                                                       |
+c |  Number of variables:        146900                                                                   |
+c |  Number of clauses:        26042440                                                                   |
+c |  Parse time:                   3.88 s                                                                 |
+c |                                                                                                       |
+c | Preprocesing is fully done
+c Too many clauses... No preprocessing
+c |  Simplification time:          0.82 s                                                                 |
+c |                                                                                                       |
+c ========================================[ MAGIC CONSTANTS ]==============================================
+c | Constants are supposed to work well together :-)                                                      |
+c | however, if you find better choices, please let us known...                                           |
+c |-------------------------------------------------------------------------------------------------------|
+c | Adapt dynamically the solver after 100000 conflicts (restarts, reduction strategies...)               |
+c |-------------------------------------------------------------------------------------------------------|
+c |                                |                                |                                     |
+c | - Restarts:                    | - Reduce Clause DB:            | - Minimize Asserting:               |
+c |   * LBD Queue    :     50      |   * First     :   2000         |    * size <  30                     |
+c |   * Trail  Queue :   5000      |   * Inc       :    300         |    * lbd  <   6                     |
+c |   * K            :   0.80      |   * Special   :   1000         |                                     |
+c |   * R            :   1.40      |   * Protected :  (lbd)< 30     |                                     |
+c |                                |                                |                                     |
+c ==================================[ Search Statistics (every  10000 conflicts) ]=========================
+c |                                                                                                       |
+c |          RESTARTS           |          ORIGINAL         |              LEARNT              | Progress |
+c |       NB   Blocked  Avg Cfc |    Vars  Clauses Literals |   Red   Learnts    LBD2  Removed |          |
+c =========================================================================================================
+c |       71         0      140 |  142902 26042440 52356615 |     2     6110      224     3651 |  2.722 % |
+c |      115        55      173 |  142726 26042440 52356615 |     3    11051      373     8564 |  2.841 % |
+c |      168       123      178 |  142526 26042440 52356615 |     4    13590      529    15849 |  2.978 % |
+c |      199       204      201 |  142348 26042440 52356615 |     5    13761      719    25523 |  3.099 % |
+c |      221       295      226 |  142161 26042440 52356615 |     5    23611      964    25523 |  3.226 % |
+c |      224       372      267 |  141951 26042440 52356615 |     6    21228     1197    37728 |  3.369 % |
+c |      246       463      284 |  141751 26042440 52356615 |     7    16270     1439    52522 |  3.505 % |
+c |      276       552      289 |  141539 26042440 52356615 |     7    26087     1691    52522 |  3.649 % |
+c |      283       610      318 |  141387 26042440 52356615 |     8    18641     1888    69828 |  3.753 % |
+c |      297       685      336 |  141209 26042440 52356615 |     8    28480     2118    69828 |  3.874 % |
+c
+c Try to adapt solver strategies
+c 
+c Nothing extreme in th
